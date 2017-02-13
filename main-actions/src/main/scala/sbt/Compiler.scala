@@ -106,7 +106,7 @@ object Compiler {
     {
       val scalaProvider = app.provider.scalaProvider
       val instance = ScalaInstance(scalaProvider.version, scalaProvider.launcher)
-      val sourceModule = scalaCompilerBridgeSource2_11
+      val sourceModule = scalaCompilerBridgeSource2_x("12")
       compilers(instance, cpOptions, None, ivyConfiguration, fileToStore, sourceModule)
     }
 
